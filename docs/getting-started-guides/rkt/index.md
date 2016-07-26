@@ -22,10 +22,10 @@ must be running on the node.
 
 rkt uses the [Container Network Interface (CNI)](https://github.com/appc/cni)
 to manage container networking. By default, all pods attempt to join a network
-called `rkt.kubernetes.io`, which is currently defined [in
+called `rkt.gertisdemo.github.io`, which is currently defined [in
 `rkt.go`](https://github.com/kubernetes/kubernetes/blob/v1.2.0-alpha.6/pkg/kubelet/rkt/rkt.go#L91).
 In order for pods to get correct IP addresses, the CNI config file must be
-edited to add this `rkt.kubernetes.io` network:
+edited to add this `rkt.gertisdemo.github.io` network:
 
 #### Using flannel
 
@@ -39,7 +39,7 @@ be set up with a CNI config like:
 ```shell
 $ cat <<EOF >/etc/rkt/net.d/k8s_cluster.conf
 {
-    "name": "rkt.kubernetes.io",
+    "name": "rkt.gertisdemo.github.io",
     "type": "flannel"
 }
 EOF
@@ -47,7 +47,7 @@ EOF
 
 While `k8s_cluster.conf` is a rather arbitrary name for the config file itself,
 and can be adjusted to suit local conventions, the keys and values should be exactly
-as shown above. `name` must be `rkt.kubernetes.io` and `type` should be `flannel`.
+as shown above. `name` must be `rkt.gertisdemo.github.io` and `type` should be `flannel`.
 More details about the flannel CNI plugin can be found
 [in the CNI documentation](https://github.com/appc/cni/blob/master/Documentation/flannel.md).
 
@@ -60,7 +60,7 @@ necessary CNI config file a bit more verbose:
 ```shell
 $ cat <<EOF >/etc/rkt/net.d/k8s_cluster.conf
 {
-    "name": "rkt.kubernetes.io",
+    "name": "rkt.gertisdemo.github.io",
     "type": "bridge",
     "bridge": "cbr0",
     "isGateway": true,

@@ -306,5 +306,5 @@ The cluster should be running! Check that your nodes are reporting as such:
 ```shell
 kubectl get nodes
 NAME          LABELS                               STATUS
-kube-node-1   kubernetes.io/hostname=kube-node-1   Ready
+kube-node-1   gertisdemo.github.io/hostname=kube-node-1   Ready
 ```

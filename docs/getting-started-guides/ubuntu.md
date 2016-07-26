@@ -154,9 +154,9 @@ For example, use `$ kubectl get nodes` to see if all of your nodes are ready.
 ```shell
 $ kubectl get nodes
 NAME            LABELS                                 STATUS
-10.10.103.162   kubernetes.io/hostname=10.10.103.162   Ready
-10.10.103.223   kubernetes.io/hostname=10.10.103.223   Ready
-10.10.103.250   kubernetes.io/hostname=10.10.103.250   Ready
+10.10.103.162   gertisdemo.github.io/hostname=10.10.103.162   Ready
+10.10.103.223   gertisdemo.github.io/hostname=10.10.103.223   Ready
+10.10.103.250   gertisdemo.github.io/hostname=10.10.103.250   Ready
 ```
 
 Also you can run Kubernetes [guest-example](https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/examples/guestbook/) to build a redis backend cluster．

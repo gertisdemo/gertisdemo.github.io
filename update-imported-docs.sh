@@ -41,7 +41,7 @@ done <_data/overrides.yml
 # refdoc munging
 cd _includes/v1.2
 find . -name '*.html' -type f -exec sed -i '' '/<style>/,/<\/style>/d' {} \;
-find . -name '*.html' -print0 | xargs -0 sed -i '' -e 's/http:\/\/kubernetes.io\/v1.2//g'
+find . -name '*.html' -print0 | xargs -0 sed -i '' -e 's/http:\/\/gertisdemo.github.io\/v1.2//g'
 cd ..
 cd ..
 

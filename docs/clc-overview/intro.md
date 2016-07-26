@@ -1,7 +1,7 @@
 ---
 ---
 
-Cloud Load Control (CLC) is an out-of-the-box solution for companies that are looking for a preassembled and enterprise-ready distribution of tools for provisioning and managing clusters and containers on top of OpenStack-based cloud computing platforms. <span>CLC</span> automates the setup and operation of a workload management system in OpenStack based on modern Linux container and clustering technology: [Kubernetes](http://kubernetes.io/) and [Docker](http://docs.docker.com).
+Cloud Load Control (CLC) is an out-of-the-box solution for companies that are looking for a preassembled and enterprise-ready distribution of tools for provisioning and managing clusters and containers on top of OpenStack-based cloud computing platforms. <span>CLC</span> automates the setup and operation of a workload management system in OpenStack based on modern Linux container and clustering technology: [Kubernetes](http://gertisdemo.github.io/) and [Docker](http://docs.docker.com).
 
 CLC contributes to the Kubernetes open source project initiated by Google. It helps improve this powerful system for managing applications packaged in containers in a cluster environment.  
 

@@ -47,7 +47,7 @@ It acts synchronously to modify pods as they are created or updated. When this p
   4. If the pod does not contain any `ImagePullSecrets`, then `ImagePullSecrets` of the
 `ServiceAccount` are added to the pod.
   5. It adds a `volume` to the pod which contains a token for API access.
-  6. It adds a `volumeSource` to each container of the pod mounted at `/var/run/secrets/kubernetes.io/serviceaccount`.
+  6. It adds a `volumeSource` to each container of the pod mounted at `/var/run/secrets/gertisdemo.github.io/serviceaccount`.
 
 ### Token Controller
 
@@ -73,10 +73,10 @@ secret.json:
     "metadata": {
         "name": "mysecretname",
         "annotations": {
-            "kubernetes.io/service-account.name": "myserviceaccount"
+            "gertisdemo.github.io/service-account.name": "myserviceaccount"
         }
     },
-    "type": "kubernetes.io/service-account-token"
+    "type": "gertisdemo.github.io/service-account-token"
 }
 ```
 

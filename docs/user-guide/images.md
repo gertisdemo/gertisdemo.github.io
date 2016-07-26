@@ -200,7 +200,7 @@ Be sure to:
 - set the name of the data item to `.dockerconfigjson`
 - base64 encode the docker file and paste that string, unbroken
   as the value for field `data[".dockerconfigjson"]`
-- set `type` to `kubernetes.io/dockerconfigjson`
+- set `type` to `gertisdemo.github.io/dockerconfigjson`
 
 Example:
 
@@ -212,7 +212,7 @@ metadata:
   namespace: awesomeapps
 data:
   .dockerconfigjson: UmVhbGx5IHJlYWxseSByZWVlZWVlZWVlZWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWFhYWxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGxsbGx5eXl5eXl5eXl5eXl5eXl5eXl5eSBsbGxsbGxsbGxsbGxsbG9vb29vb29vb29vb29vb29vb29vb29vb29vb25ubm5ubm5ubm5ubm5ubm5ubm5ubm5ubmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2cgYXV0aCBrZXlzCg==
-type: kubernetes.io/dockerconfigjson
+type: gertisdemo.github.io/dockerconfigjson
 ```
 
 If you get the error message `error: no objects passed to create`, it may mean the base64 encoded string is invalid.

@@ -72,7 +72,7 @@ To switch back to this context later, run this command: `kubectl config use-cont
 
 Type `minikube stop` to shut the cluster down.
 
-Minikube also includes the [Kubernetes dashboard](http://kubernetes.io/docs/user-guide/ui/). Run this command to see the included kube-system pods:
+Minikube also includes the [Kubernetes dashboard](http://gertisdemo.github.io/docs/user-guide/ui/). Run this command to see the included kube-system pods:
 
 ```shell
 $ kubectl get pods --all-namespaces

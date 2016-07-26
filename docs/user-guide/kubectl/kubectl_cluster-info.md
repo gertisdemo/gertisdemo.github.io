@@ -7,7 +7,7 @@ Display cluster info
 ### Synopsis
 
 
-Display addresses of the master and services with label kubernetes.io/cluster-service=true
+Display addresses of the master and services with label gertisdemo.github.io/cluster-service=true
 
 ```
 kubectl cluster-info

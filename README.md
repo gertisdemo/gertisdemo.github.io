@@ -110,7 +110,7 @@ In English, this would read: "Create a set of tabs with the alias `servicesample
 and have tabs visually labeled "JSON" and "YAML" that use `json` and `yaml` Rouge syntax highlighting, which display the contents of
 `service-sample.{extension}` on the page, and link to the file in GitHub at (full path)."
 
-Example file: [Pods: Multi-Container](http://kubernetes.io/docs/user-guide/pods/multi-container/).
+Example file: [Pods: Multi-Container](http://gertisdemo.github.io/docs/user-guide/pods/multi-container/).
 
 ## Use a global variable
 

@@ -6,7 +6,7 @@ metadata:
   labels:
     k8s-app: kube-dns
     version: v9
-    kubernetes.io/cluster-service: "true"
+    gertisdemo.github.io/cluster-service: "true"
 spec:
   replicas: 3
   selector:
@@ -17,7 +17,7 @@ spec:
       labels:
         k8s-app: kube-dns
         version: v9
-        kubernetes.io/cluster-service: "true"
+        gertisdemo.github.io/cluster-service: "true"
     spec:
       containers:
       - name: etcd

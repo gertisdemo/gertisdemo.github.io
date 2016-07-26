@@ -99,18 +99,18 @@ This step brings up a cluster as normal, still running in a single zone
 
 View the nodes; you can see that they are labeled with zone information.
 They are all in `us-central1-a` (GCE) or `us-west-2a` (AWS) so far.  The
-labels are `failure-domain.beta.kubernetes.io/region` for the region,
-and `failure-domain.beta.kubernetes.io/zone` for the zone:
+labels are `failure-domain.beta.gertisdemo.github.io/region` for the region,
+and `failure-domain.beta.gertisdemo.github.io/zone` for the zone:
 
 ```shell
 > kubectl get nodes --show-labels
 
 
 NAME                     STATUS                     AGE       LABELS
-kubernetes-master        Ready,SchedulingDisabled   6m        beta.kubernetes.io/instance-type=n1-standard-1,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-master
-kubernetes-minion-87j9   Ready                      6m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-87j9
-kubernetes-minion-9vlv   Ready                      6m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-9vlv
-kubernetes-minion-a12q   Ready                      6m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-a12q
+kubernetes-master        Ready,SchedulingDisabled   6m        beta.gertisdemo.github.io/instance-type=n1-standard-1,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-master
+kubernetes-minion-87j9   Ready                      6m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-87j9
+kubernetes-minion-9vlv   Ready                      6m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-9vlv
+kubernetes-minion-a12q   Ready                      6m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-a12q
 ```
 
 ### Add more nodes in a second zone
@@ -142,13 +142,13 @@ in us-central1-b:
 > kubectl get nodes --show-labels
 
 NAME                     STATUS                     AGE       LABELS
-kubernetes-master        Ready,SchedulingDisabled   16m       beta.kubernetes.io/instance-type=n1-standard-1,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-master
-kubernetes-minion-281d   Ready                      2m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-b,kubernetes.io/hostname=kubernetes-minion-281d
-kubernetes-minion-87j9   Ready                      16m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-87j9
-kubernetes-minion-9vlv   Ready                      16m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-9vlv
-kubernetes-minion-a12q   Ready                      17m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-a12q
-kubernetes-minion-pp2f   Ready                      2m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-b,kubernetes.io/hostname=kubernetes-minion-pp2f
-kubernetes-minion-wf8i   Ready                      2m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-b,kubernetes.io/hostname=kubernetes-minion-wf8i
+kubernetes-master        Ready,SchedulingDisabled   16m       beta.gertisdemo.github.io/instance-type=n1-standard-1,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-master
+kubernetes-minion-281d   Ready                      2m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-b,gertisdemo.github.io/hostname=kubernetes-minion-281d
+kubernetes-minion-87j9   Ready                      16m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-87j9
+kubernetes-minion-9vlv   Ready                      16m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-9vlv
+kubernetes-minion-a12q   Ready                      17m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-a12q
+kubernetes-minion-pp2f   Ready                      2m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-b,gertisdemo.github.io/hostname=kubernetes-minion-pp2f
+kubernetes-minion-wf8i   Ready                      2m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-b,gertisdemo.github.io/hostname=kubernetes-minion-wf8i
 ```
 
 ### Volume affinity
@@ -164,7 +164,7 @@ kubectl create -f - <<EOF
   "metadata": {
     "name": "claim1",
     "annotations": {
-        "volume.alpha.kubernetes.io/storage-class": "foo"
+        "volume.alpha.gertisdemo.github.io/storage-class": "foo"
     }
   },
   "spec": {
@@ -189,7 +189,7 @@ be improved in a future version (issue [#23330](https://github.com/kubernetes/ku
 ```shell
 > kubectl get pv --show-labels
 NAME           CAPACITY   ACCESSMODES   STATUS    CLAIM            REASON    AGE       LABELS
-pv-gce-mj4gm   5Gi        RWO           Bound     default/claim1             46s       failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a
+pv-gce-mj4gm   5Gi        RWO           Bound     default/claim1             46s       failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a
 ```
 
 So now we will create a pod that uses the persistent volume claim.
@@ -224,7 +224,7 @@ cross-zone attachments are not generally permitted by cloud providers:
 Node:		kubernetes-minion-9vlv/10.240.0.5
 > kubectl get node kubernetes-minion-9vlv --show-labels
 NAME                     STATUS    AGE       LABELS
-kubernetes-minion-9vlv   Ready     22m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-9vlv
+kubernetes-minion-9vlv   Ready     22m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-9vlv
 ```
 
 ### Pods are spread across zones
@@ -266,9 +266,9 @@ Node:		kubernetes-minion-olsh/10.240.0.11
 
  > kubectl get node kubernetes-minion-9vlv kubernetes-minion-281d kubernetes-minion-olsh --show-labels
 NAME                     STATUS    AGE       LABELS
-kubernetes-minion-9vlv   Ready     34m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-a,kubernetes.io/hostname=kubernetes-minion-9vlv
-kubernetes-minion-281d   Ready     20m       beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-b,kubernetes.io/hostname=kubernetes-minion-281d
-kubernetes-minion-olsh   Ready     3m        beta.kubernetes.io/instance-type=n1-standard-2,failure-domain.beta.kubernetes.io/region=us-central1,failure-domain.beta.kubernetes.io/zone=us-central1-f,kubernetes.io/hostname=kubernetes-minion-olsh
+kubernetes-minion-9vlv   Ready     34m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-a,gertisdemo.github.io/hostname=kubernetes-minion-9vlv
+kubernetes-minion-281d   Ready     20m       beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-b,gertisdemo.github.io/hostname=kubernetes-minion-281d
+kubernetes-minion-olsh   Ready     3m        beta.gertisdemo.github.io/instance-type=n1-standard-2,failure-domain.beta.gertisdemo.github.io/region=us-central1,failure-domain.beta.gertisdemo.github.io/zone=us-central1-f,gertisdemo.github.io/hostname=kubernetes-minion-olsh
 ```
 
 

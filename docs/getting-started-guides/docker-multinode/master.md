@@ -232,7 +232,7 @@ This should print something like:
 
 ```shell
 NAME        LABELS                             STATUS
-127.0.0.1   kubernetes.io/hostname=127.0.0.1   Ready
+127.0.0.1   gertisdemo.github.io/hostname=127.0.0.1   Ready
 ```
 
 If the status of the node is `NotReady` or `Unknown` please check that all of the containers you created are successfully running.

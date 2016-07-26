@@ -1,11 +1,11 @@
 Following this example, you will create a pod with a container that consumes the pod's name and
-namespace using the [downward API](http://kubernetes.io/docs/user-guide/downward-api/).
+namespace using the [downward API](http://gertisdemo.github.io/docs/user-guide/downward-api/).
 
 ## Step Zero: Prerequisites
 
 This example assumes you have a Kubernetes cluster installed and running, and that you have
 installed the `kubectl` command line tool somewhere in your path. Please see the [getting
-started](http://kubernetes.io/docs/getting-started-guides/) for installation instructions for your platform.
+started](http://gertisdemo.github.io/docs/getting-started-guides/) for installation instructions for your platform.
 
 ## Step One: Create the pod
 

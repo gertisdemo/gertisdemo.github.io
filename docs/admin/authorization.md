@@ -58,7 +58,7 @@ Each line is a "policy object".  A policy object is a map with the following
 properties:
 
   - Versioning properties:
-    - `apiVersion`, type string; valid values are "abac.authorization.kubernetes.io/v1beta1". Allows versioning and conversion of the policy format.
+    - `apiVersion`, type string; valid values are "abac.authorization.gertisdemo.github.io/v1beta1". Allows versioning and conversion of the policy format.
     - `kind`, type string: valid values are "Policy". Allows versioning and conversion of the policy format.
   - `spec` property set to a map with the following properties:
     - Subject-matching properties:
@@ -119,11 +119,11 @@ up the verbosity:
 
 ### Examples
 
- 1. Alice can do anything to all resources:                  `{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "alice", "namespace": "*", "resource": "*", "apiGroup": "*"}}`
- 2. Kubelet can read any pods:                               `{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "kubelet", "namespace": "*", "resource": "pods", "readonly": true}}`
- 3. Kubelet can read and write events:                       `{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "kubelet", "namespace": "*", "resource": "events"}}`
- 4. Bob can just read pods in namespace "projectCaribou":    `{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "bob", "namespace": "projectCaribou", "resource": "pods", "readonly": true}}`
- 5. Anyone can make read-only requests to all non-API paths: `{"apiVersion": "abac.authorization.kubernetes.io/v1beta1", "kind": "Policy", "spec": {"user": "*", "readonly": true, "nonResourcePath": "*"}}`
+ 1. Alice can do anything to all resources:                  `{"apiVersion": "abac.authorization.gertisdemo.github.io/v1beta1", "kind": "Policy", "spec": {"user": "alice", "namespace": "*", "resource": "*", "apiGroup": "*"}}`
+ 2. Kubelet can read any pods:                               `{"apiVersion": "abac.authorization.gertisdemo.github.io/v1beta1", "kind": "Policy", "spec": {"user": "kubelet", "namespace": "*", "resource": "pods", "readonly": true}}`
+ 3. Kubelet can read and write events:                       `{"apiVersion": "abac.authorization.gertisdemo.github.io/v1beta1", "kind": "Policy", "spec": {"user": "kubelet", "namespace": "*", "resource": "events"}}`
+ 4. Bob can just read pods in namespace "projectCaribou":    `{"apiVersion": "abac.authorization.gertisdemo.github.io/v1beta1", "kind": "Policy", "spec": {"user": "bob", "namespace": "projectCaribou", "resource": "pods", "readonly": true}}`
+ 5. Anyone can make read-only requests to all non-API paths: `{"apiVersion": "abac.authorization.gertisdemo.github.io/v1beta1", "kind": "Policy", "spec": {"user": "*", "readonly": true, "nonResourcePath": "*"}}`
 
 [Complete file example](http://releases.k8s.io/{{page.githubbranch}}/pkg/auth/authorizer/abac/example_policy_file.jsonl)
 
@@ -147,7 +147,7 @@ kube-system full privilege to the API, you would add this line to your policy
 file:
 
 ```json
-{"apiVersion":"abac.authorization.kubernetes.io/v1beta1","kind":"Policy","user":"system:serviceaccount:kube-system:default","namespace":"*","resource":"*","apiGroup":"*"}
+{"apiVersion":"abac.authorization.gertisdemo.github.io/v1beta1","kind":"Policy","user":"system:serviceaccount:kube-system:default","namespace":"*","resource":"*","apiGroup":"*"}
 ```
 
 The apiserver will need to be restarted to pickup the new policy lines.

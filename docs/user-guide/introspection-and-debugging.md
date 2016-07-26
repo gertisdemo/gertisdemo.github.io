@@ -188,7 +188,7 @@ apiVersion: v1
 kind: Pod
 metadata:
   annotations:
-    kubernetes.io/created-by: |
+    gertisdemo.github.io/created-by: |
       {"kind":"SerializedReference","apiVersion":"v1","reference":{"kind":"ReplicaSet","namespace":"default","name":"nginx-deployment-1006230814","uid":"4c84c175-f161-11e5-9a78-42010af00005","apiVersion":"extensions","resourceVersion":"133434"}}
   creationTimestamp: 2016-03-24T01:39:50Z
   generateName: nginx-deployment-1006230814-
@@ -217,7 +217,7 @@ spec:
         memory: 128Mi
     terminationMessagePath: /dev/termination-log
     volumeMounts:
-    - mountPath: /var/run/secrets/kubernetes.io/serviceaccount
+    - mountPath: /var/run/secrets/gertisdemo.github.io/serviceaccount
       name: default-token-4bcbi
       readOnly: true
   dnsPolicy: ClusterFirst
@@ -261,14 +261,14 @@ Sometimes when debugging it can be useful to look at the status of a node -- for
 ```shell
 $ kubectl get nodes
 NAME                     LABELS                                          STATUS
-kubernetes-node-861h     kubernetes.io/hostname=kubernetes-node-861h     NotReady
-kubernetes-node-bols     kubernetes.io/hostname=kubernetes-node-bols     Ready
-kubernetes-node-st6x     kubernetes.io/hostname=kubernetes-node-st6x     Ready
-kubernetes-node-unaj     kubernetes.io/hostname=kubernetes-node-unaj     Ready
+kubernetes-node-861h     gertisdemo.github.io/hostname=kubernetes-node-861h     NotReady
+kubernetes-node-bols     gertisdemo.github.io/hostname=kubernetes-node-bols     Ready
+kubernetes-node-st6x     gertisdemo.github.io/hostname=kubernetes-node-st6x     Ready
+kubernetes-node-unaj     gertisdemo.github.io/hostname=kubernetes-node-unaj     Ready
 
 $ kubectl describe node kubernetes-node-861h
 Name:			kubernetes-node-861h
-Labels:			kubernetes.io/hostname=kubernetes-node-861h
+Labels:			gertisdemo.github.io/hostname=kubernetes-node-861h
 CreationTimestamp:	Fri, 10 Jul 2015 14:32:29 -0700
 Conditions:
   Type		Status		LastHeartbeatTime			LastTransitionTime			Reason					Message
@@ -303,7 +303,7 @@ kind: Node
 metadata:
   creationTimestamp: 2015-07-10T21:32:29Z
   labels:
-    kubernetes.io/hostname: kubernetes-node-861h
+    gertisdemo.github.io/hostname: kubernetes-node-861h
   name: kubernetes-node-861h
   resourceVersion: "757"
   selfLink: /api/v1/nodes/kubernetes-node-861h

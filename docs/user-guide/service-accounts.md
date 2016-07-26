@@ -102,8 +102,8 @@ kind: Secret
 metadata:
   name: build-robot-secret
   annotations: 
-    kubernetes.io/service-account.name: build-robot
-type: kubernetes.io/service-account-token
+    gertisdemo.github.io/service-account.name: build-robot
+type: gertisdemo.github.io/service-account-token
 EOF
 $ kubectl create -f /tmp/build-robot-secret.yaml
 secrets/build-robot-secret
@@ -118,9 +118,9 @@ $ kubectl describe secrets/build-robot-secret
 Name:   build-robot-secret
 Namespace:  default
 Labels:   <none>
-Annotations:  kubernetes.io/service-account.name=build-robot,kubernetes.io/service-account.uid=870ef2a5-35cf-11e5-8d06-005056b45392
+Annotations:  gertisdemo.github.io/service-account.name=build-robot,gertisdemo.github.io/service-account.uid=870ef2a5-35cf-11e5-8d06-005056b45392
 
-Type: kubernetes.io/service-account-token
+Type: gertisdemo.github.io/service-account-token
 
 Data
 ====
@@ -139,7 +139,7 @@ Next, verify it has been created.  For example:
 ```shell
 $ kubectl get secrets myregistrykey
 NAME             TYPE                              DATA
-myregistrykey    kubernetes.io/.dockerconfigjson   1
+myregistrykey    gertisdemo.github.io/.dockerconfigjson   1
 ```
 
 Next, read/modify/write the service account for the namespace to use this secret as an imagePullSecret
@@ -192,4 +192,4 @@ spec:
 TODO: Test and explain how to use additional non-K8s secrets with an existing service account.
 
 TODO explain:
-  - The token goes to: "/var/run/secrets/kubernetes.io/serviceaccount/$WHATFILENAME"
+  - The token goes to: "/var/run/secrets/gertisdemo.github.io/serviceaccount/$WHATFILENAME"

@@ -69,7 +69,7 @@ The deploy wizard expects that you provide the following information:
 
   A [Replication Controller](/docs/user-guide/replication-controller/) will be created to maintain the desired number of Pods across your cluster.
 
-- **Service** (optional): For some parts of your application (e.g. frontends) you may want to expose a [Service](http://kubernetes.io/docs/user-guide/services/) onto an external, maybe public IP address outside of your cluster (external Service). For external Services, you may need to open up one or more ports to do so. Find more details [here](/docs/user-guide/services-firewalls/).
+- **Service** (optional): For some parts of your application (e.g. frontends) you may want to expose a [Service](http://gertisdemo.github.io/docs/user-guide/services/) onto an external, maybe public IP address outside of your cluster (external Service). For external Services, you may need to open up one or more ports to do so. Find more details [here](/docs/user-guide/services-firewalls/).
 
   Other Services that are only visible from inside the cluster are called internal Services.
 
@@ -110,11 +110,11 @@ track=stable
 
 - **Run as privileged**: This setting determines whether processes in [privileged containers](/docs/user-guide/pods/#privileged-mode-for-pod-containers) are equivalent to processes running as root on the host. Privileged containers can make use of capabilities like manipulating the network stack and accessing devices.
 
-- **Environment variables**: Kubernetes exposes Services through [environment variables](http://kubernetes.io/docs/user-guide/environment-guide/). You can compose environment variable or pass arguments to your commands using the values of environment variables. They can be used in applications to find a Service. Values can reference other variables using the `$(VAR_NAME)` syntax.
+- **Environment variables**: Kubernetes exposes Services through [environment variables](http://gertisdemo.github.io/docs/user-guide/environment-guide/). You can compose environment variable or pass arguments to your commands using the values of environment variables. They can be used in applications to find a Service. Values can reference other variables using the `$(VAR_NAME)` syntax.
 
 ### Uploading a YAML or JSON file
 
-Kubernetes supports declarative configuration. In this style, all configuration is stored in YAML or JSON configuration files using the Kubernetes' [API](http://kubernetes.io/docs/api/) resource schemas as the configuration schemas.
+Kubernetes supports declarative configuration. In this style, all configuration is stored in YAML or JSON configuration files using the Kubernetes' [API](http://gertisdemo.github.io/docs/api/) resource schemas as the configuration schemas.
 
 As an alternative to specifying application details in the deploy wizard, you can define your Replication Controllers and Services in YAML or JSON files, and upload the files to your Pods:
 
@@ -156,14 +156,14 @@ To go back to the workloads overview, click the Kubernetes logo.
 
 Workloads are categorized as follows:
 
-* [Daemon Sets](http://kubernetes.io/docs/admin/daemons/) which ensure that all or some of the nodes in your cluster run a copy of a Pod.  
-* [Deployments](http://kubernetes.io/docs/user-guide/deployments/) which provide declarative updates for Pods and Replica Sets (the next-generation [Replication Controller](http://kubernetes.io/docs/user-guide/replication-controller/))
-  The Details page for a Deployment lists resource details, as well as new and old Replica Sets. The resource details also include information on the [RollingUpdate](http://kubernetes.io/docs/user-guide/rolling-updates/) strategy, if any.
-* [Pet Sets](http://kubernetes.io/docs/user-guide/load-balancer/) (nominal Services, also known as load-balanced Services) for legacy application support.
-* [Replica Sets](http://kubernetes.io/docs/user-guide/replicasets/) for using label selectors.
-* [Jobs](http://kubernetes.io/docs/user-guide/jobs/) for creating one or more Pods, ensuring that a specified number of them successfully terminate, and tracking the completions.
-* [Replication Controllers](http://kubernetes.io/docs/user-guide/replication-controller/)
-* [Pods](http://kubernetes.io/docs/user-guide/pods/)
+* [Daemon Sets](http://gertisdemo.github.io/docs/admin/daemons/) which ensure that all or some of the nodes in your cluster run a copy of a Pod.  
+* [Deployments](http://gertisdemo.github.io/docs/user-guide/deployments/) which provide declarative updates for Pods and Replica Sets (the next-generation [Replication Controller](http://gertisdemo.github.io/docs/user-guide/replication-controller/))
+  The Details page for a Deployment lists resource details, as well as new and old Replica Sets. The resource details also include information on the [RollingUpdate](http://gertisdemo.github.io/docs/user-guide/rolling-updates/) strategy, if any.
+* [Pet Sets](http://gertisdemo.github.io/docs/user-guide/load-balancer/) (nominal Services, also known as load-balanced Services) for legacy application support.
+* [Replica Sets](http://gertisdemo.github.io/docs/user-guide/replicasets/) for using label selectors.
+* [Jobs](http://gertisdemo.github.io/docs/user-guide/jobs/) for creating one or more Pods, ensuring that a specified number of them successfully terminate, and tracking the completions.
+* [Replication Controllers](http://gertisdemo.github.io/docs/user-guide/replication-controller/)
+* [Pods](http://gertisdemo.github.io/docs/user-guide/pods/)
 
 You can display the resources of a specific category in two ways:
 

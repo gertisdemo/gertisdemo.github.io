@@ -64,14 +64,14 @@ accessed via a Kubernetes service definition.
 ```shell
 $ kubectl get services --namespace=kube-system
 NAME                    LABELS                                                                                              SELECTOR                        IP(S)          PORT(S)
-elasticsearch-logging   k8s-app=elasticsearch-logging,kubernetes.io/cluster-service=true,kubernetes.io/name=Elasticsearch   k8s-app=elasticsearch-logging   10.0.222.57    9200/TCP
-kibana-logging          k8s-app=kibana-logging,kubernetes.io/cluster-service=true,kubernetes.io/name=Kibana                 k8s-app=kibana-logging          10.0.193.226   5601/TCP
-kube-dns                k8s-app=kube-dns,kubernetes.io/cluster-service=true,kubernetes.io/name=KubeDNS                      k8s-app=kube-dns                10.0.0.10      53/UDP
+elasticsearch-logging   k8s-app=elasticsearch-logging,gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=Elasticsearch   k8s-app=elasticsearch-logging   10.0.222.57    9200/TCP
+kibana-logging          k8s-app=kibana-logging,gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=Kibana                 k8s-app=kibana-logging          10.0.193.226   5601/TCP
+kube-dns                k8s-app=kube-dns,gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=KubeDNS                      k8s-app=kube-dns                10.0.0.10      53/UDP
                                                                                                                                                                            53/TCP
 kubernetes              component=apiserver,provider=kubernetes                                                             <none>                          10.0.0.1       443/TCP
-monitoring-grafana      kubernetes.io/cluster-service=true,kubernetes.io/name=Grafana                                       k8s-app=influxGrafana           10.0.167.139   80/TCP
-monitoring-heapster     kubernetes.io/cluster-service=true,kubernetes.io/name=Heapster                                      k8s-app=heapster                10.0.208.221   80/TCP
-monitoring-influxdb     kubernetes.io/cluster-service=true,kubernetes.io/name=InfluxDB                                      k8s-app=influxGrafana           10.0.188.57    8083/TCP
+monitoring-grafana      gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=Grafana                                       k8s-app=influxGrafana           10.0.167.139   80/TCP
+monitoring-heapster     gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=Heapster                                      k8s-app=heapster                10.0.208.221   80/TCP
+monitoring-influxdb     gertisdemo.github.io/cluster-service=true,gertisdemo.github.io/name=InfluxDB                                      k8s-app=influxGrafana           10.0.188.57    8083/TCP
 ```
 
 By default two Elasticsearch replicas are created and one Kibana replica is created.

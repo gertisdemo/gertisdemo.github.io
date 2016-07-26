@@ -47,7 +47,7 @@ As with other resources, the created secret can be viewed with `get`:
 ```shell
 $ kubectl get secrets
 NAME                  TYPE                                  DATA      AGE
-default-token-zirbw   kubernetes.io/service-account-token   3         3h
+default-token-zirbw   gertisdemo.github.io/service-account-token   3         3h
 mysecret              Opaque                                2         2m
 ```
 
@@ -92,7 +92,7 @@ metadata:
   name: myregistrykey
 data:
   .dockerconfigjson: eyAiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIjogeyAiYXV0aCI6ICJabUZyWlhCaGMzTjNiM0prTVRJSyIsICJlbWFpbCI6ICJqZG9lQGV4YW1wbGUuY29tIiB9IH0K
-type: kubernetes.io/dockerconfigjson
+type: gertisdemo.github.io/dockerconfigjson
 EOF
 
 $ kubectl create -f /tmp/image-pull-secret.yaml
@@ -154,7 +154,7 @@ spec:
           name: www-data
 ```
 
-More examples can be found in our [blog article](http://blog.kubernetes.io/2015/06/the-distributed-system-toolkit-patterns.html) and [presentation slides](http://www.slideshare.net/Docker/slideshare-burns).
+More examples can be found in our [blog article](http://blog.gertisdemo.github.io/2015/06/the-distributed-system-toolkit-patterns.html) and [presentation slides](http://www.slideshare.net/Docker/slideshare-burns).
 
 ## Resource management
 
