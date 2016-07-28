@@ -3,7 +3,7 @@ kind: Pod
 metadata:
   name: annotation-second-scheduler
   annotations:
-    scheduler.alpha.gertisdemo.github.io/name: my-scheduler
+    scheduler.alpha.kubernetes.io/name: my-scheduler
   labels:
     name: multischeduler-example
 spec:

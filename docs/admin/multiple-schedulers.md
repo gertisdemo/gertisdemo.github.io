@@ -57,7 +57,7 @@ config. Save it as `my-scheduler.yaml`:
 {% include code.html language="yaml" file="multiple-schedulers/my-scheduler.yaml" ghlink="/docs/admin/multiple-schedulers/my-scheduler.yaml" %}
 
 An important thing to note here is that the name of the scheduler specified as an
-argument to the scheduler command in the container spec should be unique. This is the name that is matched against the value of the optional `scheduler.alpha.gertisdemo.github.io/name` annotation on pods, to determine whether this scheduler is responsible for scheduling a particular pod.
+argument to the scheduler command in the container spec should be unique. This is the name that is matched against the value of the optional `scheduler.alpha.kubernetes.io/name` annotation on pods, to determine whether this scheduler is responsible for scheduling a particular pod.
 
 Please see the
 [kube-scheduler documentation](/docs/admin/kube-scheduler/) for
@@ -108,7 +108,7 @@ scheduler as an annotation in that pod spec. Let's look at three examples.
   {% include code.html language="yaml" file="multiple-schedulers/pod2.yaml" ghlink="/docs/admin/multiple-schedulers/pod2.yaml" %}
 
   A scheduler is specified by supplying the scheduler name as a value to the annotation
-  with key `scheduler.alpha.gertisdemo.github.io/name`. In this case, we supply the name of the
+  with key `scheduler.alpha.kubernetes.io/name`. In this case, we supply the name of the
   default scheduler which is `default-scheduler`.
 
   Save this file as `pod2.yaml` and submit it to the Kubernetes cluster.
@@ -122,7 +122,7 @@ scheduler as an annotation in that pod spec. Let's look at three examples.
 
   In this case, we specify that this pod should be scheduled using the scheduler that we
   deployed - `my-scheduler`. Note that the value of the annotation with key
-  `scheduler.alpha.gertisdemo.github.io/name` should match the name supplied to the scheduler
+  `scheduler.alpha.kubernetes.io/name` should match the name supplied to the scheduler
   command as an argument in the deployment config for the scheduler.
 
   Save this file as `pod3.yaml` and submit it to the Kubernetes cluster.

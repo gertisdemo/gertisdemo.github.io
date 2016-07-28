@@ -69,8 +69,8 @@ Check there are 2 nodes in the cluster:
 ```shell
 core@kube-00 ~ $ kubectl get nodes
 NAME      LABELS                           STATUS
-kube-01   gertisdemo.github.io/hostname=kube-01   Ready
-kube-02   gertisdemo.github.io/hostname=kube-02   Ready
+kube-01   kubernetes.io/hostname=kube-01   Ready
+kube-02   kubernetes.io/hostname=kube-02   Ready
 ```
 
 ## Deploying the workload
@@ -138,10 +138,10 @@ Back on `kube-00`:
 ```shell
 core@kube-00 ~ $ kubectl get nodes
 NAME      LABELS                           STATUS
-kube-01   gertisdemo.github.io/hostname=kube-01   Ready
-kube-02   gertisdemo.github.io/hostname=kube-02   Ready
-kube-03   gertisdemo.github.io/hostname=kube-03   Ready
-kube-04   gertisdemo.github.io/hostname=kube-04   Ready
+kube-01   kubernetes.io/hostname=kube-01   Ready
+kube-02   kubernetes.io/hostname=kube-02   Ready
+kube-03   kubernetes.io/hostname=kube-03   Ready
+kube-04   kubernetes.io/hostname=kube-04   Ready
 ```
 
 You can see that two more nodes joined happily. Let's scale the number of Guestbook instances now.

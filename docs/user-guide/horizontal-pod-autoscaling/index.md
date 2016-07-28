@@ -113,7 +113,7 @@ all running pods. Example:
 
 ```yaml
     annotations:
-      alpha/target.custom-metrics.podautoscaler.gertisdemo.github.io: '{"items":[{"name":"qps", "value": "10"}]}'
+      alpha/target.custom-metrics.podautoscaler.kubernetes.io: '{"items":[{"name":"qps", "value": "10"}]}'
 ```
 
 In this case if there are 4 pods running and each of them reports qps metric to be equal to 15 HPA will start 2 additional pods so there will be 6 pods in total. If there are multiple metrics passed in the annotation or CPU is configured as well then HPA will use the biggest 

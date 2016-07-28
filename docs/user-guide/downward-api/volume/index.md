@@ -34,8 +34,8 @@ rack="rack-22"
 zone="us-est-coast"
 build="two"
 builder="john-doe"
-gertisdemo.github.io/config.seen="2015-08-24T13:47:23.432459138Z"
-gertisdemo.github.io/config.source="api"
+kubernetes.io/config.seen="2015-08-24T13:47:23.432459138Z"
+kubernetes.io/config.source="api"
 ```
 
 ### Internals

@@ -44,7 +44,7 @@ coreos:
       content: |
         [Unit]
         Description=Kubernetes Cluster Master
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         RefuseManualStart=no
         After=weave-network.target
         Requires=weave-network.target
@@ -62,7 +62,7 @@ coreos:
       content: |
         [Unit]
         Description=Kubernetes Cluster Node
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         RefuseManualStart=no
         After=weave-network.target
         Requires=weave-network.target
@@ -181,7 +181,7 @@ coreos:
         Before=kubelet.service
         Before=kube-proxy.service
         Description=Download Kubernetes Binaries
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Requires=network-online.target
         [Service]
         Environment=KUBE_RELEASE_TARBALL=https://github.com/kubernetes/kubernetes/releases/download/v1.1.2/kubernetes.tar.gz
@@ -210,7 +210,7 @@ coreos:
         Before=kube-scheduler.service
         ConditionFileIsExecutable=/opt/kubernetes/server/bin/kube-apiserver
         Description=Kubernetes API Server
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=install-kubernetes.service
         ConditionHost=kube-00
         [Service]
@@ -235,7 +235,7 @@ coreos:
         After=install-kubernetes.service
         ConditionFileIsExecutable=/opt/kubernetes/server/bin/kube-scheduler
         Description=Kubernetes Scheduler
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=kube-apiserver.service
         ConditionHost=kube-00
         [Service]
@@ -255,7 +255,7 @@ coreos:
         After=kube-apiserver.service
         ConditionFileIsExecutable=/opt/kubernetes/server/bin/kube-controller-manager
         Description=Kubernetes Controller Manager
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=kube-apiserver.service
         Wants=install-kubernetes.service
         ConditionHost=kube-00
@@ -275,7 +275,7 @@ coreos:
         After=install-kubernetes.service
         ConditionFileIsExecutable=/opt/kubernetes/server/bin/kubelet
         Description=Kubernetes Kubelet
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=install-kubernetes.service
         ConditionHost=!kube-00
         [Service]
@@ -302,7 +302,7 @@ coreos:
         After=install-kubernetes.service
         ConditionFileIsExecutable=/opt/kubernetes/server/bin/kube-proxy
         Description=Kubernetes Proxy
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=install-kubernetes.service
         [Service]
         ExecStart=/opt/kubernetes/server/bin/kube-proxy \
@@ -323,7 +323,7 @@ coreos:
         ConditionPathIsDirectory=/etc/kubernetes/addons/
         ConditionHost=kube-00
         Description=Kubernetes Addons
-        Documentation=http://gertisdemo.github.io/
+        Documentation=http://kubernetes.io/
         Wants=install-kubernetes.service
         Wants=kube-apiserver.service
         [Service]

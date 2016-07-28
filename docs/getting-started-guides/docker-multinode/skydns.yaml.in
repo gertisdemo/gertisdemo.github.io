@@ -6,7 +6,7 @@ metadata:
   labels:
     k8s-app: kube-dns
     version: v10
-    gertisdemo.github.io/cluster-service: "true"
+    kubernetes.io/cluster-service: "true"
 spec:
   replicas: {{ pillar['dns_replicas'] }}
   selector:
@@ -17,7 +17,7 @@ spec:
       labels:
         k8s-app: kube-dns
         version: v10
-        gertisdemo.github.io/cluster-service: "true"
+        kubernetes.io/cluster-service: "true"
     spec:
       containers:
       - name: etcd
@@ -121,8 +121,8 @@ metadata:
   namespace: kube-system
   labels:
     k8s-app: kube-dns
-    gertisdemo.github.io/cluster-service: "true"
-    gertisdemo.github.io/name: "KubeDNS"
+    kubernetes.io/cluster-service: "true"
+    kubernetes.io/name: "KubeDNS"
 spec:
   selector:
     k8s-app: kube-dns

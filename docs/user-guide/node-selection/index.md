@@ -72,7 +72,7 @@ Here's an example of a pod that uses node affinity:
 {% include code.html language="yaml" file="pod-with-node-affinity.yaml" ghlink="/docs/user-guide/node-selection/pod-with-node-affinity.yaml" %}
 
 This node affinity rule says the pod can only be placed on a node with a label whose key is
-`gertisdemo.github.io/e2e-az-name` and whose value is either `e2e-az1` or `e2e-az2`. In addition,
+`kubernetes.io/e2e-az-name` and whose value is either `e2e-az1` or `e2e-az2`. In addition,
 among nodes that meet that criteria, nodes with a label whose key is `another-annotation-key` and whose
 value is `another-annotation-value` should be preferred.
 
@@ -86,10 +86,10 @@ to be scheduled onto a candidate node.
 In addition to labels you [attach yourself](#step-one-attach-label-to-the-node), nodes come pre-populated
 with a standard set of labels. As of Kubernetes v1.2 these labels are
 
-* `gertisdemo.github.io/hostname`
-* `failure-domain.beta.gertisdemo.github.io/zone`
-* `failure-domain.beta.gertisdemo.github.io/region`
-* `beta.gertisdemo.github.io/instance-type`
+* `kubernetes.io/hostname`
+* `failure-domain.beta.kubernetes.io/zone`
+* `failure-domain.beta.kubernetes.io/region`
+* `beta.kubernetes.io/instance-type`
 
 ### Conclusion
 

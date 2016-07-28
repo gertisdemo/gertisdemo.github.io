@@ -317,7 +317,7 @@ To further see the details of each revision, run:
 $ kubectl rollout history deployment/nginx-deployment --revision=2
 deployments "nginx-deployment" revision 2
 Labels:     app=nginx,pod-template-hash=1564180365
-Annotations:    gertisdemo.github.io/change-cause=kubectl apply -f docs/user-guide/new-nginx-deployment.yaml
+Annotations:    kubernetes.io/change-cause=kubectl apply -f docs/user-guide/new-nginx-deployment.yaml
 Image(s):   nginx:1.9.1
 No volumes.
 ```

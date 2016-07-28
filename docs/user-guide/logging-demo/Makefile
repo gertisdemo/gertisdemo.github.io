@@ -17,8 +17,8 @@
 # Elasticsearch and Kibana pods for the GCE platform.
 # For examples of how to observe the ingested logs please
 # see the appropriate getting started guide e.g.
-# Google Cloud Logging: http://gertisdemo.github.io/docs/getting-started-guides/logging/
-# With Elasticsearch and Kibana logging: http://gertisdemo.github.io/docs/getting-started-guides/logging-elasticsearch/
+# Google Cloud Logging: http://kubernetes.io/docs/getting-started-guides/logging/
+# With Elasticsearch and Kibana logging: http://kubernetes.io/docs/getting-started-guides/logging-elasticsearch/
 
 .PHONY: up down logger-up logger-down logger10-up logger10-down
 
