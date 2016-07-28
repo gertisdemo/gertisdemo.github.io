@@ -37,7 +37,7 @@ Someone else from the community may have already asked a similar question or may
 
 ### Slack
 
-The Kubernetes team hangs out on Slack in the `#kubernetes-users` channel.  You can participate in the Kubernetes team [here](https://kubernetes.slack.com).  Slack requires registration, but the Kubernetes team is open invitation to anyone to register [here](http://slack.gertisdemo.github.io).  Feel free to come and ask any and all questions.
+The Kubernetes team hangs out on Slack in the `#kubernetes-users` channel.  You can participate in the Kubernetes team [here](https://kubernetes.slack.com).  Slack requires registration, but the Kubernetes team is open invitation to anyone to register [here](http://slack.kubernetes.io).  Feel free to come and ask any and all questions.
 
 ### Mailing List
 

@@ -32,7 +32,7 @@ Next, make sure you [download Node.js](https://nodejs.org/en/download/).
 
 Then install [Docker](https://docs.docker.com/engine/installation/), and [Google Cloud SDK](https://cloud.google.com/sdk/).
 
-Finally, after Google Cloud SDK installs, run the following command to install [`kubectl`](http://gertisdemo.github.io/docs/user-guide/kubectl-overview/):
+Finally, after Google Cloud SDK installs, run the following command to install [`kubectl`](http://kubernetes.io/docs/user-guide/kubectl-overview/):
 
 ```shell
 gcloud components install kubectl
@@ -307,7 +307,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   annotations:
-    deployment.gertisdemo.github.io/revision: "1"
+    deployment.kubernetes.io/revision: "1"
   creationTimestamp: 2016-03-24T17:55:28Z
   generation: 3
   labels:

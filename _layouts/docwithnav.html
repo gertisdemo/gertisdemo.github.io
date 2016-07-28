@@ -11,7 +11,7 @@
 	<h5>{{ site.data[foundTOC].abstract }}</h5>
 	<div id="vendorStrip" class="light-text">
 		<ul>
-			<li><a href="/docs/" {% if site.data[foundTOC].bigheader == "Guides" %}class="YAH"{% endif %}>Guides</a></li>
+			<li><a href="/docs/" {% if site.data[foundTOC].bigheader == "Guides" %}class="YAH"{% endif %}>GUIDES</a></li>
 			<li><a href="/docs/reference" {% if site.data[foundTOC].bigheader == "Reference Documentation" %}class="YAH"{% endif %}>REFERENCE</a></li>
 			<li><a href="/docs/samples" {% if site.data[foundTOC].bigheader == "Samples" %}class="YAH"{% endif %}>SAMPLES</a></li>
 			<li><a href="/docs/troubleshooting/" {% if site.data[foundTOC].bigheader == "Support" %}class="YAH"{% endif %}>SUPPORT</a></li>
@@ -27,7 +27,7 @@
         <div class="pi-accordion">
         {% assign tree = site.data[foundTOC].toc %}{% include tree.html %}
         </div> <!-- /pi-accordion -->
-		<button class="push-menu-close-button" onclick="fj.toggleToc()"></button>
+		<button class="push-menu-close-button" onclick="kub.toggleToc()"></button>
 	</div> <!-- /docsToc -->
 	<div id="docsContent">
         <p><a href="/editdocs#{{ page.path }}" id="editPageButton">Edit This Page</a></p>
@@ -49,7 +49,7 @@
 
 {% include footer.html %}
 
-<button class="flyout-button" onclick="fj.toggleToc()"></button>
+<button class="flyout-button" onclick="kub.toggleToc()"></button>
 
 <style>
 	.cse .gsc-control-cse, .gsc-control-cse, {

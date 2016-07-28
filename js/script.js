@@ -90,7 +90,7 @@ function px(n){
 	return n + 'px';
 }
 
-var fj = (function () {
+var kub = (function () {
 	var HEADER_HEIGHT;
 	var html, header, mainNav, quickstartButton, hero, encyclopedia, footer, wishField, headlineWrapper;
 
