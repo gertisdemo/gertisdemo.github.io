@@ -1,4 +1,4 @@
-name: Kubernetes
+name: CLC
 markdown: kramdown
 kramdown:
   input: GFM
@@ -16,8 +16,8 @@ defaults:
     scope:
       path: ""
     values:
-      version: "v1.2"
-      githubbranch: "release-1.2"
+      version: "vx"
+      githubbranch: "release-x"
       docsbranch: "master"
   -
     scope:

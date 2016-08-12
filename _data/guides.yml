@@ -13,6 +13,9 @@ toc:
 - title: Cluster Orchestration
   path: /docs/clc-overview/cluster-orchestration/
 
+- title: Hello World Walkthrough
+  path: /docs/hellonode/
+
 - title: CLC PDF Manuals
   path: /docs/clc-pdf-manuals/clc-pdfs/
 

@@ -68,28 +68,28 @@ h2, h3, h4 {
 </style>
 <div class="colContainer">
   <div class="col3rd">
-    <h3>What is Kubernetes?</h3>
-    <p>Kubernetes is an open-source platform for automating deployment, scaling, and operations of application containers across clusters of hosts. Learn more about what this means for your app.</p>
-    <a href="/docs/whatisk8s/" class="button">Read the Overview</a>
+    <h3>What is CLC?</h3>
+    <p>Cloud Load Control (CLC) is an out-of-the-box solution for companies that are looking for a preassembled and enterprise-ready distribution of tools for provisioning and managing clusters and containers on top of OpenStack-based cloud computing platforms.</p>
+    <a href="/docs/clc-overview/intro/" class="button">Read the Overview</a>
   </div>
   <div class="col3rd">
     <h3>Hello Node!</h3>
-    <p>In this quickstart, we’ll be creating a Kubernetes instance on that stands up a simple “Hello World” app using Node.js. In just a few minutes you'll go from zero to deployed Kubernetes app on Google Container Engine.</p>
+    <p>In this quickstart, a Kubernetes instance is created that stands up a simple “Hello World” application using `Node.js`. In just a few minutes you will deploy an application to a Kubernetes cluster.</p>
     <a href="/docs/hellonode/" class="button">Get Started</a>
   </div>
   <div class="col3rd">
     <h3>Guided Tutorial</h3>
-    <p>If you’ve completed the quickstart, a great next step is Kubernetes 101. You will follow a path through the various features of Kubernetes, with code examples along the way, learning all of the core concepts. There's also a <a href="/docs/user-guide/walkthrough/k8s201">Kubernetes 201</a>!</p>
-    <a href="/docs/user-guide/walkthrough/" class="button">Kubernetes 101</a>
+    <p>If you’ve completed the quickstart, a great next step is ...</p>
+    <a href="/docs/walkthrough/" class="button">Walkthrough</a>
   </div>
 </div>
 
 ## Samples
 
 <div id="samples" class="colContainer">
-<a href="/docs/getting-started-guides/meanstack/" class="shadowbox">
+<!--a href="/docs/getting-started-guides/meanstack/" class="shadowbox">
   <img src="/images/docs/meanstack/image_0.png"><br/>MEAN Stack
-</a>
+</a-->
 <a href="https://github.com/kubernetes/kubernetes/tree/{{page.githubbranch}}/examples/guestbook" target="_blank" class="shadowbox">
   <img src="/images/docs/redis.svg"><br/>Guestbook + Redis
 </a>
@@ -106,13 +106,9 @@ h2, h3, h4 {
 
 <div class="colContainer">
   <div class="col2nd">
-  <h3>Contribute to Our Docs</h3>
-  <p>The docs for Kubernetes are open-source, just like the code for Kubernetes itself. The docs are on GitHub Pages, so you can fork it and it will auto-stage on username.github.io, previewing your changes!</p>
-  <a href="/editdocs/" class="button">Write Docs for K8s</a>
+  <h3>Contribute to Our Documentation</h3>
+  <p>The documentation for CLC is open-source, just like the code for CLC itself. The documentation is on GitHub Pages, so you can fork it and it will auto-stage on username.github.io, previewing your changes!</p>
+  <a href="/editdocs/" class="button">Write Documentation for CLC</a>
   </div>
-  <div class="col2nd">
-  <h3>Need Help?</h3>
-  <p>Try consulting our <a href="/docs/troubleshooting/">troubleshooting guides</a>, or <a href="https://github.com/kubernetes/kubernetes/wiki/User-FAQ">our FAQ</a>. Kubernetes is also supported by a great community of contributors and experts who hang out in <a href="http://slack.kubernetes.io/">our Slack channel</a>, <a href="https://groups.google.com/forum/#!forum/google-containers">our Google Group</a> and <a href="http://stackoverflow.com/questions/tagged/kubernetes">Stack Overflow</a>.</p>
-  <a href="/docs/troubleshooting/" class="button">Get Support</a>
-  </div>
+  
 </div>
