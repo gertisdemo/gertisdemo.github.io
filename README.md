@@ -1,7 +1,5 @@
 ## Instructions for Contributing to the CLC Documentation
 
-Welcome! We are very pleased you want to contribute to the documentation for CLC.
-
 To create a copy of our site on your GitHub account, click the **Fork** button in the upper-right area of the screen. Make any changes you want in your fork, and when you are ready to send those changes to us, go to the index page of your forked repository and click **New Pull Request** to let us know about it.
 
 ## Staging the site on GitHub Pages
