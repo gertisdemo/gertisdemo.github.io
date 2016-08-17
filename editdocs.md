@@ -30,9 +30,9 @@ $( document ).ready(function() {
 
 <h2>Edit the CLC Documentation in the Cloud</h2>
 
-<p>Click the link below to visit the CLC documentation repository.</p>
+<p>Click the link below to visit the CLC documentation repository on GitHub where you can view the source code of this site.</p>
 
-<p><a class="button" href="https://github.com/gertisdemo/gertisdemo.github.io/">Browse the source code of this site</a></p>
+<p><a class="button" href="https://github.com/gertisdemo/gertisdemo.github.io/">CLC documentation repository</a></p>
 
 </div>
 

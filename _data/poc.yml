@@ -8,3 +8,5 @@ toc:
   section:
   - title: Setup of the repository
     path: /docs/poc/demo-repo/
+  - title: Working with the documentation sources
+    path: /docs/poc/editing/

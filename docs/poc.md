@@ -3,11 +3,17 @@
 The goal of this POC is to find out whether it is feasible and meaningful for EST to create future documentation for projects/products that use open source software on GitHub using the GitHub Pages mechanism for generating HTML out of markdown "on the fly". For CLC, it was a requirement to brand the Kubernetes documentation and deliver parts of the K8S documentation together with a branded K8S dashboard.
 
 To achieve this, we checked whether and how the following tasks can be achieved:
+
 1. Fork the K8S documentation repository and create a landing page that can be used for CLC as well as for other Fujitsu open source projects
+
 2. Strip down the K8S content for CLC purposes
+
 3. Deliver the K8S dashboard documentation in Fujitsu-branding
+
 4. Avoid the duplication of content
+
 5. Rebase with the K8S repository – maybe automatically solve merge conflicts
+
 6. Include documentation created with DitaWorks on the GitHub Pages
 
 
