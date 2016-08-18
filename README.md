@@ -51,7 +51,3 @@ Your copy of the site can then be viewed at [http://localhost:4000](http://local
 #### Installation on Windows
 
 Follow [these instructions](https://martinbuberl.com/blog/setup-jekyll-on-windows-and-host-it-on-github-pages/) for installing Jekyll and GitHub Pages on Windows.
-
-### Working with the Documentation Repository
-
-For an introduction to the CLC demo repository, refer to [this](../docs/poc/demo-repo/).
