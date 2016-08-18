@@ -9,40 +9,40 @@
 var body;
 
 //helper functions
-function copyCode(elem){		
- 	if (document.getElementById(elem)) {		
- 		// create hidden text element, if it doesn't already exist		
- 		var targetId = "_hiddenCopyText_";		
- 			// must use a temporary form element for the selection and copy		
- 			target = document.getElementById(targetId);		
- 			if (!target) {		
- 				var target = document.createElement("textarea");		
- 				target.style.position = "absolute";		
- 				target.style.left = "-9999px";		
- 				target.style.top = "0";		
- 				target.id = targetId;		
- 				document.body.appendChild(target);		
- 			}		
- 			target.value = document.getElementById(elem).innerText;		
- 		// select the content		
- 		target.setSelectionRange(0, target.value.length);		
- 				
- 		// copy the selection		
- 		var succeed;		
- 		try {		
- 			succeed = document.execCommand("copy");		
- 		} catch(e) {		
- 			sweetAlert("Oh, no...","Sorry, your browser doesn't support document.execCommand('copy'), so we can't copy this code to your clipboard.");		
- 			succeed = false;		
- 		}		
- 		if (succeed) sweetAlert("Copied to clipboard:",target.value);		
- 		return succeed;		
- 	} else {		
- 		sweetAlert("Oops!",elem + " not found when trying to copy code");		
- 		return false;		
- 	}		
+function copyCode(elem){
+ 	if (document.getElementById(elem)) {
+ 		// create hidden text element, if it doesn't already exist
+ 		var targetId = "_hiddenCopyText_";
+ 			// must use a temporary form element for the selection and copy
+ 			target = document.getElementById(targetId);
+ 			if (!target) {
+ 				var target = document.createElement("textarea");
+ 				target.style.position = "absolute";
+ 				target.style.left = "-9999px";
+ 				target.style.top = "0";
+ 				target.id = targetId;
+ 				document.body.appendChild(target);
+ 			}
+ 			target.value = document.getElementById(elem).innerText;
+ 		// select the content
+ 		target.setSelectionRange(0, target.value.length);
+
+ 		// copy the selection
+ 		var succeed;
+ 		try {
+ 			succeed = document.execCommand("copy");
+ 		} catch(e) {
+ 			sweetAlert("Oh, no...","Sorry, your browser doesn't support document.execCommand('copy'), so we can't copy this code to your clipboard.");
+ 			succeed = false;
+ 		}
+ 		if (succeed) sweetAlert("Copied to clipboard:",target.value);
+ 		return succeed;
+ 	} else {
+ 		sweetAlert("Oops!",elem + " not found when trying to copy code");
+ 		return false;
+ 	}
  }
- 
+
 function booleanAttributeValue(element, attribute, defaultValue){
 	// returns true if an attribute is present with no value
 	// e.g. booleanAttributeValue(element, 'data-modal', false);
@@ -92,14 +92,13 @@ function px(n){
 
 var kub = (function () {
 	var HEADER_HEIGHT;
-	var html, header, mainNav, quickstartButton, hero, encyclopedia, footer, wishField, headlineWrapper;
+	var html, header, mainNav, quickstartButton, hero, encyclopedia, footer, headlineWrapper;
 
 	$(document).ready(function () {
 		html = $('html');
 		body = $('body');
 		header = $('header');
 		mainNav = $('#mainNav');
-		wishField = $('#wishField');
 		quickstartButton = $('#quickstartButton');
 		hero = $('#hero');
 		encyclopedia = $('#encyclopedia');
@@ -112,14 +111,12 @@ var kub = (function () {
 		window.addEventListener('resize', resetTheView);
 		window.addEventListener('scroll', resetTheView);
 		window.addEventListener('keydown', handleKeystrokes);
-		wishField[0].addEventListener('keydown', handleKeystrokes);
 
 		document.onunload = function(){
 			window.removeEventListener('resize', resetTheView);
 			window.removeEventListener('scroll', resetTheView);
 			window.removeEventListener('keydown', handleKeystrokes);
-			wishField[0].removeEventListener('keydown', handleKeystrokes);
-		};
+			};
 
 		setInterval(setFooterType, 10);
 	});
@@ -187,15 +184,6 @@ var kub = (function () {
 			header.css({height: px(newHeight)});
 			html.toggleClass('open-nav');
 		}
-	}
-
-	function submitWish(textfield) {
-		window.location.replace("https://github.com/kubernetes/kubernetes.github.io/issues/new?title=I%20wish%20" +
-			window.location.pathname + "%20" + textfield.value + "&body=I%20wish%20" +
-			window.location.pathname + "%20" + textfield.value);
-
-		textfield.value = '';
-		textfield.blur();
 	}
 
 	function handleKeystrokes(e) {

@@ -162,7 +162,7 @@ header
 .nav-buttons
 	float: right
 
-#viewDocs, #tryKubernetes
+#viewDocs
 	display: none
 
 #viewDocs
@@ -173,17 +173,6 @@ header
 	&:hover
 		background-color: white
 		color: $dark-grey
-
-#tryKubernetes
-	width: 0
-	padding: 0 0
-	border: 1px solid transparent
-	background-color: transparent
-	text-align: center
-	white-space: nowrap
-	vertical-align: middle
-	overflow: hidden
-	transition: 0.3s
 
 #hamburger
 	display: inline-block
@@ -266,13 +255,6 @@ header
 
 		&:after
 			transform: rotate(-45deg)
-
-.open-nav, .y-enough
-	#tryKubernetes
-		width: 150px
-		background-color: $red
-		border-color: $red
-
 
 .flip-nav, .open-nav
 	header
@@ -358,7 +340,7 @@ footer
 
 
 
-#search, #wishField
+#search
 	background-color: transparent
 	padding: 10px
 	font-size: 16px

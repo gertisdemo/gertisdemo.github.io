@@ -17,11 +17,12 @@ $( document ).ready(function() {
     }
 });
 </script>
+
 <div id="continueEdit">
 
 <h2>Continue your Editing</h2>
 
-<p>Click the link below to edit the page you were just on. This will send you to the CLC documentation web site where you can create a copy of the site called a "fork". Make your changes, and when you are done, enter a title and a short description of you changes, and click **Propose file change** at the bottom of the screen. You can either instantly create a pull request for your changes, or continue with making other changes in your fork. When you are ready to send us all your changes, go to the index page of your forked repository on GitHub, and select **New Pull Request** to let us know about it.</p>
+<p>Click the link below to edit the page you were just on. This will send you to the CLC documentation web site where you can create a copy of the site called a "fork". Make your changes, and when you are done, enter a title and a short description of your changes, and click <b>Propose file change</b> at the bottom of the screen. You can either instantly create a pull request for your changes, or continue with making other changes in your fork. When you are ready to send us all your changes, go to the index page of your forked repository on GitHub, and select <b>New Pull Request</b> to let us know about it.</p>
 
 <p><a id="continueEditButton" class="button"></a></p>
 
