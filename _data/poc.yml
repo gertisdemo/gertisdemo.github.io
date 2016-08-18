@@ -4,9 +4,17 @@ toc:
 - title: POC
   path: /docs/poc/
 
-- title: The demo repository
+- title: Installing the documentation environment
+  path: /docs/poc/installing/
+
+- title: Using the repository
   section:
   - title: Setup of the repository
     path: /docs/poc/demo-repo/
   - title: Working with the documentation sources
     path: /docs/poc/editing/
+  - title: Contributing to the CLC documentation
+    path: /docs/poc/contributing/
+
+- title: Useful links
+  path: /docs/poc/useful-links/
